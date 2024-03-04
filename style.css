@@ -1,0 +1,99 @@
+html, body, *, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 661px;
+    background-color: #C4C4C4;
+}
+
+/* search input*/
+
+.search-input {
+    font-size: 48px;
+    line-height: 56.25px;
+    width: 500px;
+    height: 61px;
+    margin: 0 auto;
+    margin-top: 62px;
+    border: none;
+    padding-left: 13px;
+}
+
+.search-input:focus{
+    outline: 2px solid black;
+    
+}
+
+
+/* autocomplete */
+
+.autocomplete {
+    font-size: 30px;
+    line-height: 35.16px;
+    width: 500px;
+    margin: 0 auto;
+    list-style: none;
+    background-color: #E3E3E3;
+}
+
+.autocomplete__item {
+    min-height: 44px;
+    border: 1px solid black;
+    cursor: pointer;
+    padding-left: 13px;
+}
+
+.autocomplete__item:hover {
+    background-color: #65CDF9;
+}
+
+/* repositories list */
+
+.repo-list {
+    width: 502px;
+    background-color:#E27BEB;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 70px;
+}
+
+.repo-list__item {
+    position: relative;
+    width: 100%;
+    min-height: 99px;
+    border: 1px solid;
+    list-style: none;
+}
+
+.repo-list__parag {
+    height: 33%;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 16px;
+}
+
+.repo-list__deleteBtn {
+    background-image:url('img/close.svg'); 
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    right: 35px;
+    top: 25px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.repo-list__deleteBtn:hover {
+    opacity: 0.5;
+}
